@@ -9,8 +9,6 @@
 <script>
   var socket = io();
 
-  var button = document.getElementById("button");
-  var input = document.getElementById("m");
 
   button.addEventListener("click", function(){
     socket.emit('chat message', m.value);
